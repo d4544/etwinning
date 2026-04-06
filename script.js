@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btns.forEach(btn => {
             if (btn.textContent.includes(platform)) {
                 const original = btn.innerHTML;
-                btn.innerHTML = '✅ Shared!';
+                btn.innerHTML = 'Shared!';
                 setTimeout(() => { btn.innerHTML = original; }, 2000);
             }
         });
@@ -76,11 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Feedback
         const originalText = linkInput.value;
-        linkInput.value = '✅ Copied!';
+        linkInput.value = 'Copied!';
         setTimeout(() => {
             linkInput.value = originalText;
         }, 1800);
     };
-    
-    console.log('%c✅ The Power of S.H.E. website loaded successfully!', 'color:#00a8e0; font-size:14px;');
 });
